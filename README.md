@@ -34,7 +34,7 @@
 ## 🔥 Demo Preview
 
 <p align="center">
-  <img src="https://via.placeholder.com/900x450.png?text=AI+Mind+Map+Preview" width="90%" />
+  <a hreh="https://ahmedrahmani.github.io/ai-mind-map/"> AI Mind Map </a>
 </p>
 
 ---
