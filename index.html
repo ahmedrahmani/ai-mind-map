@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mind Map · Deep Hierarchical Encyclopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <div class="logo-area">
+            <div class="logo-icon">
+                <img src="logo.png" alt="AI Mind Map Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="logo-text">
+                <h1>AI Mind Map</h1>
+                <span class="tagline">Deep Knowledge Unfolded | Intelligence Defined</span>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <button id="themeToggleBtn" class="icon-btn" aria-label="Switch theme">🌙</button>
+            <button id="loginBtn" class="icon-btn login-btn">🔐 Login</button>
+            <!-- Optional dropdown menu (can be added later) -->
+        </div>
+    </header>
+
+    <div id="toolbar">
+        <div class="search-wrapper">
+            <input type="text" id="q" placeholder="🔍 Search 2100+ AI topics..." oninput="search(this.value)">
+            <button id="clearSearchBtn" class="clear-search" style="display: none;">✕</button>
+        </div>
+        <div class="tool-buttons">
+            <button class="cb" onclick="expandAll()">Expand all</button>
+            <button class="cb" onclick="collapseAll()">Collapse all</button>
+            <button class="cb" onclick="expandDepth(1)">Top level</button>
+            <button class="cb" onclick="expandDepth(2)">2 levels</button>
+            <button class="cb" onclick="expandDepth(3)">3 levels</button>
+            <button class="cb" onclick="expandDepth(4)">4 levels</button>
+        </div>
+    </div>
+
+
+
+    <div id="stats"></div>
+    <div id="tree"></div>
+    <!-- modal HTML -->
+    <div id="promptModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>📘 Learning Prompt for <span id="modalTopic"></span></h3>
+            <p>Copy the prompt below, then click the button to open DeepSeek Chat and paste it.</p>
+            <textarea id="promptText" rows="10" readonly></textarea>
+            <div class="modal-buttons">
+                <button id="copyPromptBtn">📋 Copy Prompt</button>
+                <button id="openDeepSeekBtn">🚀 Open DeepSeek Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <div class="footer-content">
+            <span>🧠 AI Mind Map · Deep Hierarchical Encyclopedia</span>
+            <span>© 2026 · Built with curiosity</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
