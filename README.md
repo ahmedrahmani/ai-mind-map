@@ -34,7 +34,9 @@
 ## 🔥 Demo Preview
 
 <p align="center">
-  <a hreh="https://ahmedrahmani.github.io/ai-mind-map/"> AI Mind Map </a>
+  <a href="https://ahmedrahmani.github.io/ai-mind-map/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Open-blue?style=for-the-badge" />
+  </a>
 </p>
 
 ---
